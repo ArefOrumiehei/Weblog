@@ -12,8 +12,8 @@ const Post = () => {
                 </div>
                 <span className={styles.postTitle}><Link to='/post/'>Lorem ipsum quisquam sed laborum</Link></span>
                 <span className={styles.postData}>1 hour ago</span>
+                <p className={styles.postDescription}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dignissimos enim impedit quis, iure aspernatur ipsam doloremque, expedita consequatur, quasi perferendis odio eos provident. Sed veritatis dolores sequi omnis nam.</p>
             </div>
-            <p className={styles.postDescription}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dignissimos enim impedit quis, iure aspernatur ipsam doloremque, expedita consequatur, quasi perferendis odio eos provident. Sed veritatis dolores sequi omnis nam.</p>
         </div>
     );
 };

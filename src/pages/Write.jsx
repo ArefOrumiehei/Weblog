@@ -28,7 +28,7 @@ const Write = () => {
     <div className={styles.write}>
       {selectedImage ? <img className={styles.writeImg} src={selectedImage} alt="Selected Image" />
         :
-        <label htmlFor='fileInput'><img src='https://placehold.co/600x300/d1d1d1/8f8f8f?text=select+your+image&font=Montserrat' className={styles.imgPlaceholder}/></label>
+        <label htmlFor='fileInput'><img src='https://placehold.co/600x300/d1d1d1/8f8f8f?text=select+cover+image&font=Montserrat' className={styles.imgPlaceholder}/></label>
       }
       <form className={styles.writeForm}>
         <div className={styles.writeFormGroup}>
@@ -53,6 +53,17 @@ const Write = () => {
           </label>
           <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleImageChange} />
           <input className={styles.writeInput} value={title} onChange={(e) => setTitle(e.target.value)} type="text" placeholder="Title" autoFocus={true} />
+        </div>
+        <div className={styles.writeFormGroup}>
+          <div className={styles.writeCheckboxs}>
+            <label>Categories : </label>
+            <span className={styles.writeCheckboxItem}><input className={styles.writeCheckbox} type='checkbox' />Life</span>
+            <span className={styles.writeCheckboxItem}><input className={styles.writeCheckbox} type='checkbox' />Tech</span>
+            <span className={styles.writeCheckboxItem}><input className={styles.writeCheckbox} type='checkbox' />Car</span>
+            <span className={styles.writeCheckboxItem}><input className={styles.writeCheckbox} type='checkbox' />Space</span>
+            <span className={styles.writeCheckboxItem}><input className={styles.writeCheckbox} type='checkbox' />Car</span>
+            <span className={styles.writeCheckboxItem}><input className={styles.writeCheckbox} type='checkbox' />Music</span>
+          </div>
         </div>
         <div className={styles.writeFormGroup}>
           <textarea

@@ -28,6 +28,7 @@
     margin-left: 150px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .writeIcon {
@@ -59,6 +60,32 @@
 .writeText {
     font-size: 20px;
     height: 100vh;
+}
+
+.writeCheckboxs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: #666;
+}
+
+.writeCheckboxs label {
+    font-size: 20px;
+}
+
+.writeCheckbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.writeCheckbox[type='checkbox']{
+    accent-color: teal;
 }
 
 .writeSubmit {

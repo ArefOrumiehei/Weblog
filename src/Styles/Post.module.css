@@ -43,11 +43,25 @@
 }
 
 .postData {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postAuthor {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     color:#888;
-    margin-top: 15px;
-    border-bottom: solid 1px;
+    padding: 3px 0;
+    cursor: pointer;
+}
+
+.postDate {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    color:#888;
+    border-bottom: solid 1px #999;
     padding: 3px 0;
 }
 

@@ -1,0 +1,117 @@
+.settings {
+    display: flex;
+}
+
+.settingsWrapper {
+    flex: 9;
+    padding: 20px;
+}
+
+.settingsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settingsUpdateTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #555555;
+}
+
+.settingsDeleteTitle {
+    font-family: 'Josefin Sans', sans-serif;
+    color: tomato;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.settingsPP {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.settingsPP > img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+}
+
+.settingsIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingsPPIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.addImg {
+    color: #fff;
+    background-color: #396cad;
+    margin-right: 6px;
+}
+
+.deleteImg {
+    color: #fff;
+    background-color: tomato;
+    margin-left: 6px;
+}
+
+.deleteImgBtn {
+    border: none;
+    background-color: #fff;
+}
+
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settingsForm > label {
+    font-family: 'Poppins', sans-serif;
+    color: dimgray;
+    width: 80%;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.settingsForm > input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0;
+    height: 30px;
+    color: gray;
+}
+
+.settingsForm > input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+.settingsSubmit {
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: teal;
+    cursor: pointer;
+}

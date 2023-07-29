@@ -1,0 +1,86 @@
+.write {
+    padding-top: 90px;
+    position: relative;
+}
+
+.writeImg {
+    margin-left: 150px;
+    width: 70vw;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.imgPlaceholder {
+    margin-left: 150px;
+    width: 70vw;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* .writeForm {
+    position: relative;
+} */
+
+.writeFormGroup {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.writeIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #396cad;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.writeInput {
+    border: none;
+    font-size: 30px;
+    padding: 20px;
+    width: 70vw;
+}
+
+.writeInput::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.writeInput:focus {
+    outline: none;
+}
+
+.writeText {
+    font-size: 20px;
+    height: 100vh;
+}
+
+.writeSubmit {
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.publishBtn {
+    font-family: 'Rubik', sans-serif;
+    right: 210px;
+    color: #fff;
+    background-color: teal;
+}
+
+.resetBtn {
+    font-family: 'Rubik', sans-serif;
+    right: 135px;
+    color: #fff;
+    background-color: tomato;
+}

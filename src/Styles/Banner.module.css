@@ -1,0 +1,66 @@
+.bannerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #9f9f9f;
+    z-index: 5;
+}
+
+
+.bannerTitleSm {
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    top: 240px;
+    left: 340px;
+    font-size: 30px;
+}
+
+.reactSpan {
+    font-family: 'Rubik', sans-serif;
+    color: #61DBFB;
+}
+
+.nodeSpan {
+    font-family: 'Rubik', sans-serif;
+    color: limegreen;
+}
+
+.bannerTitleLg {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    position: absolute;
+    bottom: 320px;    
+    left: 90px;
+    font-size: 100px;
+    animation: fade-in 1.7s ease-in-out; 
+}
+
+.bannerImg {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-500%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+  
+.bannerTitleSm {
+    animation: slide-in 1.1s ease-in-out;
+}

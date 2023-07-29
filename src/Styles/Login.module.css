@@ -1,0 +1,70 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80');
+    background-size: cover;
+}
+
+.loginTitle {
+    font-family: 'Prompt', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.loginForm > label {
+    font-family: 'Prompt', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.loginInput {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+}
+
+.loginInput::placeholder {
+    font-family: 'Prompt', sans-serif;
+    color: rgb(101, 101, 101);
+}
+
+.loginBtn {
+    font-family: 'Prompt', sans-serif;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: darkgreen;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loginRegisterBtn {
+    position: absolute;
+    border: none;
+    background-color: darkorange;
+    border-radius: 10px;
+    top: 60px;
+    right: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.loginRegisterBtn a {
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    color: #fff;
+}

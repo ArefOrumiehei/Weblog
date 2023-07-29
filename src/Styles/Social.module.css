@@ -1,0 +1,35 @@
+.social {
+    width: 1.4rem;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.socialList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.socialList a {
+    text-decoration: none;
+    color: #222;
+}
+
+.facebook:hover {
+    color: #1778F2;
+}
+
+.instagram:hover {
+    color: #FC395D;
+}
+
+.telegram:hover {
+    color: #0088CC;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}

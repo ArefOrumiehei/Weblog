@@ -4,6 +4,7 @@ import styles from '../Styles/Write.module.css';
 const Write = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [title , setTitle] = useState('')
+  // const [check , setCheck] = useState([])
   const [text , setText] = useState('')
 
   const handleImageChange = (event) => {

@@ -48,6 +48,10 @@
     color: sandybrown;
 }
 
+.blogAuthor {
+    cursor: pointer;
+}
+
 .blogDescription {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;

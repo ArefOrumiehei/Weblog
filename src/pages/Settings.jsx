@@ -21,11 +21,11 @@ const Settings = () => {
     const handleImageChange = (event) => {
         const file = event.target.files[0];
         if (file) {
-          const reader = new FileReader();
-          reader.onloadend = () => {
+            const reader = new FileReader();
+            reader.onloadend = () => {
             setPic(reader.result);
-          };
-          reader.readAsDataURL(file);
+            };
+            reader.readAsDataURL(file);
         }
     };
 

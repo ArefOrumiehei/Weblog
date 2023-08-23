@@ -15,9 +15,11 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.5",
     "@tabler/icons-react": "^2.32.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2"
+    "react-router-dom": "^6.14.2",
+    "styled-components": "^6.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

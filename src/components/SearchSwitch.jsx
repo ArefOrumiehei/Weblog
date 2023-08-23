@@ -6,6 +6,8 @@ import Switch from '@mui/material/Switch';
 import SearchIcon from '@mui/icons-material/Search';
 
 import styles from '../Styles/SearchSwitch.module.css'
+// import { createContext } from 'react';
+// import { ThemeContext } from 'styled-components';
 
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -57,6 +59,9 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 
 export default function CustomizedSwitches() {
+
+  // const Theme = createContext(ThemeContext)
+
   return (
     <FormGroup className={styles.container}>
       <FormControlLabel

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse !important;
+    flex-wrap: nowrap !important;
+    gap: 20px;
+}
+
+.searchIcon {
+    cursor: pointer;
+}

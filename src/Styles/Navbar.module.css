@@ -16,15 +16,15 @@
     align-items: center;
 }
 
-.navbarCenter {
-    flex: 6;
+.verticalLine {
+    width: 2px;
+    height: 40px;
+    background-color: #444;
+    margin: 0 5px;
 }
 
-.profileImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+.navbarCenter {
+    flex: 6;
 }
 
 .navbarList {
@@ -53,11 +53,5 @@
     cursor: pointer;
 }
 
-.search {
-    font-size: 18px;
-    color: #666;
-    cursor: pointer;
-    margin-left: 15px;
-}
 
-  
+

@@ -4,7 +4,6 @@ import styles from '../Styles/Write.module.css';
 const Write = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [title , setTitle] = useState('')
-  // const [check , setCheck] = useState([])
   const [text , setText] = useState('')
 
   const handleImageChange = (event) => {
@@ -18,12 +17,20 @@ const Write = () => {
     }
   };
 
+  // reset all inputs
   const resetHandler = (e) => {
-    e.preventDefault()
-    setSelectedImage(null)
-    setTitle('')
-    setText('')
-  }
+    e.preventDefault();
+    setSelectedImage(null);
+    setTitle('');
+    setText('');
+  
+    // Uncheck all checkboxes
+    const checkboxes = document.querySelectorAll(`.${styles.writeCheckbox}`);
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = false;
+    });
+  };
+  
 
   return (
     <div className={styles.write}>

@@ -1,0 +1,15 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.profileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

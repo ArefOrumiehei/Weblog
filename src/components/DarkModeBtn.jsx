@@ -10,14 +10,14 @@ const DarkModeBtn = () => {
     const {darkMode , toggle} = useContext(DarkModeContext)
     const [isChecked , setIsChecked] = useState(darkMode)
 
-    const changeHandler = () => {
-        setIsChecked(!darkMode)
-    }
+    // const changeHandler = () => {
+    //     setIsChecked(!darkMode)
+    // }
 
     return (
         <div className={styles.checkboxWrapper}>
             <label className={styles.switch}>
-                <input onClick={toggle} type='checkbox' onChange={changeHandler} checked={isChecked} /> 
+                <input onClick={toggle} type='checkbox' onChange={e => {}} checked={darkMode} /> 
                 <span className={styles.slider}></span>
             </label>
         </div>

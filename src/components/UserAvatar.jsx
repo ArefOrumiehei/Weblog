@@ -19,7 +19,7 @@ import Box from '@mui/material/Box';
 import styles from '../Styles/UserAvatar.module.css'
 
 //Photo
-import profileImg from '../assets/images/ProfilePic.jpg'
+import profileImg from '../assets/images/profilePic.jpg'
 
 //Context
 import { DarkModeContext } from '../context/DarkModeProvider';
@@ -55,7 +55,7 @@ export default function AccountMenu() {
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
                 >
-                <Avatar sx={{ width: 40, height: 40 , bgcolor: deepPurple[500] }}><img className={styles.profileImg} src={profileImg} alt="Profile Image" /></Avatar>
+                <Avatar sx={{ width: 40, height: 40 , bgcolor: deepPurple[500] }}><img src={profileImg} className={styles.profileImg} alt="Profile Image" /></Avatar>
                 </IconButton>
             </Tooltip>
             </Box>

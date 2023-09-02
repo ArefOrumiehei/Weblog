@@ -1,17 +1,29 @@
-import styles from "../Styles/Navbar.module.css"
 import { Link } from 'react-router-dom'
 
-import Social from "./Social";
+//Styles
+import styles from "../Styles/Navbar.module.css"
+import { styled } from "styled-components";
 
-import DashboardMenu from './DashboardMenu'
+//Components
+import Social from "./Social";
+import UserAvatar from './UserAvatar'
 import SearchSwitch from './SearchSwitch'
+
+
+const NavbarDiv = styled.div `
+    background-color: ${({theme}) => theme.navbar};
+
+    & a {
+        color: ${({theme}) => theme.text};
+    }
+`
 
 
 const Navbar = () => {
 
     const isUserLogin = true
     return (
-        <div className={styles.navbar}>
+        <NavbarDiv className={styles.navbar}>
             <div className={styles.navbarRight}>
                 <Social/>
                 <div className={styles.verticalLine}></div>
@@ -29,7 +41,7 @@ const Navbar = () => {
             </div>
             <div className={styles.navbarLeft}>
                 {isUserLogin ? 
-                <DashboardMenu/>
+                <UserAvatar/>
                 :
                 <>
                     <Link className={styles.loginLink} to='/login'>Login</Link>
@@ -37,7 +49,7 @@ const Navbar = () => {
                 </>
                 }
             </div>
-        </div>
+        </NavbarDiv>
     );
 };
 

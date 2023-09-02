@@ -1,11 +1,21 @@
+import { styled } from 'styled-components';
 import styles from '../Styles/Sidebar.module.css';
 
 import image from '../assets/images/history-in-hd-e5eDHbmHprg-unsplash.jpg'
 import Social from './Social';
 
+const SidebarDiv = styled.div `
+    background-color:  ${({theme}) => theme.sidebar};
+    color: ${({theme}) => theme.text};
+
+    & a {
+        color: ${({theme}) => theme.text};
+    }
+`
+
 const Sidebar = () => {
     return (
-        <div className={styles.sidebar}>
+        <SidebarDiv className={styles.sidebar}>
             <div className={styles.sidebarItem}>
                 <span className={styles.sidebarTitle}>About Me</span>
                 <img className={styles.sidebarImg} src={image} alt="Astronaut Image" />
@@ -28,7 +38,7 @@ const Sidebar = () => {
                     <Social/>
                 </div>
             </div>
-        </div>
+        </SidebarDiv>
     );
 };
 

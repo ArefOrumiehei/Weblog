@@ -1,13 +1,27 @@
+//Styles
 import styles from '../Styles/Blog.module.css';
+import { styled } from 'styled-components';
 
+//Photo
 import blogImg from '../assets/images/blogImg.avif'
+
+const BlogDiv = styled.div `
+    
+    & #blogTitle {
+        color: ${({theme}) => theme.text};
+    }
+
+    & #blogDesc {
+        color: ${({theme}) => theme.textSoft};
+    }
+`
 
 const Blog = () => {
     return (
-        <div className={styles.blog}>
+        <BlogDiv className={styles.blog}>
             <div className={styles.blogWrapper}>
                 <img className={styles.blogImg} src={blogImg} alt="Blog Image" />
-                <h1 className={styles.blogTitle}>Lorem ipsum dolor sit amet consectetur
+                <h1 className={styles.blogTitle} id='blogTitle'>Lorem ipsum dolor sit amet consectetur
                     <div className={styles.blogEdit}>
                         <svg xmlns="http://www.w3.org/2000/svg" className={styles.blogIcon} width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -29,12 +43,12 @@ const Blog = () => {
                     <span className={styles.blogAuthor}><b>Aref Orumiehei</b></span>
                     <span className={styles.blogDate}>1 hour ago</span>
                 </div>
-                <p className={styles.blogDescription}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo saepe aliquam possimus illo delectus veniam sapiente obcaecati adipisci quaerat quia mollitia aliquid nobis, cumque ad cupiditate. Expedita voluptatum natus esse. 
+                <p className={styles.blogDescription} id='blogDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo saepe aliquam possimus illo delectus veniam sapiente obcaecati adipisci quaerat quia mollitia aliquid nobis, cumque ad cupiditate. Expedita voluptatum natus esse. 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos ipsum ex debitis laudantium magni. Soluta, debitis nam omnis officiis dolores dolorem recusandae asperiores! Quis, non? Reiciendis voluptates reprehenderit dolorem?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quos ullam repudiandae sunt quibusdam? Dolores aperiam harum dicta, consequuntur magni aut ea, cupiditate omnis illo possimus maiores rem. Expedita, doloribus!
                 </p>
             </div>
-        </div>
+        </BlogDiv>
     );
 };
 

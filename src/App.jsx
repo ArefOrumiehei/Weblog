@@ -1,7 +1,8 @@
-import { createContext, useState } from 'react'
+import { useContext } from 'react'
 import { Routes , Route } from 'react-router-dom'
 import { ThemeProvider, styled } from 'styled-components'
 
+//Components
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import SinglePost from "./pages/SinglePost"
@@ -10,24 +11,23 @@ import Settings from "./pages/Settings"
 import Login from "./pages/Login"
 import Register from './pages/Register'
 
+//Theme
 import { darkTheme , lightTheme } from './Theme/Theme'
+import { DarkModeContext } from './context/DarkModeProvider'
 
 const Container = styled.div `
   background-color: ${({theme}) => theme.bg};
 `
 
-const ThemeContext = createContext()
-
 function App() {
   const isUserLogin = true
 
-  const [themeMode , setThemeMode] = useState(false)
+  const {darkMode} = useContext(DarkModeContext)
   
   return (
-    <ThemeProvider theme={themeMode ? darkTheme : lightTheme}>
-      <ThemeContext.Provider value={themeMode}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <Container>
-          <Navbar themeMode={themeMode} setThemeMode={setThemeMode}/>
+          <Navbar/>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/' />
@@ -40,7 +40,6 @@ function App() {
             <Route path='/register' element={isUserLogin ? <Home/> : <Register/>}/>
           </Routes>
         </Container>
-      </ThemeContext.Provider>
     </ThemeProvider>
   )
 }

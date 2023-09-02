@@ -55,7 +55,7 @@ export default function AccountMenu() {
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
                 >
-                <Avatar sx={{ width: 35, height: 35 , bgcolor: deepPurple[500] }}><img className={styles.profileImg} src={profileImg} alt="Profile Image" /></Avatar>
+                <Avatar sx={{ width: 40, height: 40 , bgcolor: deepPurple[500] }}><img className={styles.profileImg} src={profileImg} alt="Profile Image" /></Avatar>
                 </IconButton>
             </Tooltip>
             </Box>

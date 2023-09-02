@@ -23,7 +23,7 @@ const SettingsDiv = styled.div `
         color: ${({theme}) => theme.textSoft};
     }
 
-    & #input {
+    & .input {
         color: ${({theme}) => theme.textSoft};
     }
 `
@@ -74,11 +74,11 @@ const Settings = () => {
                         <input type='file' id='fileInput' style={{display:'none'}} onChange={handleImageChange}/>
                     </div>
                     <label>Username</label>
-                    <input type="text" placeholder='Aref'  id='input' />
+                    <input type="text" placeholder='Aref'  className='input' />
                     <label>Email</label>
-                    <input type="email" placeholder='aref@gmail.com' id='input' />
+                    <input type="email" placeholder='aref@gmail.com' className='input' />
                     <label>Password</label>
-                    <input type="password" id='input' />
+                    <input type="password" className='input' />
                     <button className={styles.settingsSubmit} onClick={updateHandler}>Update</button>
                 </form>
             </div>

@@ -4,10 +4,11 @@ import { styled } from 'styled-components';
 //Styles
 import styles from '../Styles/Write.module.css';
 import { DarkModeContext } from '../context/DarkModeProvider';
+import { IconFolderPlus } from '@tabler/icons-react';
 
 const WriteDiv = styled.div `
   
-  & #writeInput , #writeForm {
+  & #writeInput , #writeForm , #writeTextarea {
     color: ${({theme}) => theme.text};
   }
 `
@@ -54,23 +55,7 @@ const Write = () => {
       <form className={styles.writeForm}>
         <div className={styles.writeFormGroup}>
           <label htmlFor="fileInput">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className={styles.writeIcon}
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 19h-7a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2h4l3 3h7a2 2 0 0 1 2 2v3.5"></path>
-              <path d="M16 19h6"></path>
-              <path d="M19 16v6"></path>
-            </svg>
+            <IconFolderPlus size={35} className={styles.writeIcon} />
           </label>
           <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleImageChange} />
           <input className={styles.writeInput} id='writeInput' value={title} onChange={(e) => setTitle(e.target.value)} type="text" placeholder="Title" autoFocus={true} />
@@ -89,7 +74,7 @@ const Write = () => {
         <div className={styles.writeFormGroup}>
           <textarea
             className={`${styles.writeInput} ${styles.writeText}`}
-            id='writeInput'
+            id='writeTextarea'
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Tell your story..."
